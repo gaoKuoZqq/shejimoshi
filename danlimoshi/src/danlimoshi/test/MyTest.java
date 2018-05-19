@@ -7,7 +7,7 @@ import danlimoshi.entity.Pen;
 
 public class MyTest {
 	@Test
-	public void myTest() {
+	public void myTest() throws CloneNotSupportedException {
 		//给老子来个杯子
 		Cup cup1 = Cup.getCup();
 		//MD不好用,在给老子来一个-.-
@@ -24,6 +24,14 @@ public class MyTest {
 		//MD还是不好用,别TM是一杆吧=.=
 		if (pen1.equals(pen2)) {
 			System.out.println("还真TM是一杆!");
+		}
+		//真鸡儿晦气,爸爸克隆一杆行了吧
+		Pen pen3 = pen2.clone();
+		if (pen1 == pen3) {
+			System.out.println("老子服了,就用这杆吧!");
+		}else {
+			System.out.println("老子真聪明,这点事难不倒我的!");
+			
 		}
 	}
 }
