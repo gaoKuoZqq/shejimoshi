@@ -1,0 +1,15 @@
+package dailimoshi.entity;
+
+public class MiMax implements Phone{
+
+	@Override
+	public void call(String mobile) {
+		System.out.println(" π”√MiMax≤¶∫≈:" + mobile);
+	}
+
+	@Override
+	public String game() {
+		return "MiMax÷°¬ :40";
+	}
+
+}
