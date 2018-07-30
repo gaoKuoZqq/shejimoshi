@@ -17,10 +17,10 @@ public class MyTest {
 		miPhone.call("1234567890");
 		System.out.println(miPhone.game());
 	}
-	@Test
-	public void dynamic() {
+	public static void main(String s[]) {
 		Phone phone = PhoneFactoryDynamic.getPhoneDynamicProxy("iphoneX");
 		phone.call("1234566");
 		System.out.println(phone.game());
+		System.out.println(phone.getClass());
 	}
 }

@@ -20,6 +20,7 @@ public class PhoneFactoryDynamic{
 			phone = null;
 			break;
 		}
+		 System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
 		Phone proxy = (Phone) Proxy.newProxyInstance(phone.getClass().getClassLoader(),
 				phone.getClass().getInterfaces(), new PhoneHandle(phone));
 		return proxy;
